@@ -27,6 +27,7 @@
         <mdui-navigation-rail-item icon="info" value="about" href="./about.html">关于我们</mdui-navigation-rail-item>
         <mdui-navigation-rail-item icon="menu_book" value="footprint"
             href="./footprint.html">宽鸟足迹</mdui-navigation-rail-item>
+        <mdui-fab icon="color_lens" slot="bottom" id="fab" onclick="setcc();"></mdui-fab>
     </mdui-navigation-rail>
     <div class="mdui-prose" style="margin: 16px;">
         <h2>宽鸟足迹</h2>
@@ -56,6 +57,37 @@
             <h3>2025年</h3>我们会继续努力的！
         </div>
     </div>
+    <mdui-dialog class="color-setting" headline="调色盘">
+        <mdui-radio-group value="#9FB1F1" id="cc" onchange="colorchange();">
+            <h3>限时配色</h3>
+            <mdui-radio value="#FF0000" style="color: #FF0000;">新春红色</mdui-radio>
+            <h3>常规配色</h3>
+            <mdui-radio value="#9FB1F1" style="color: #9FB1F1;">蓝紫色</mdui-radio>
+            <mdui-radio value="#C0A9E7" style="color: #C0A9E7;">薰衣草色</mdui-radio>
+            <mdui-radio value="#79C6E3" style="color: #79C6E3;">浅石青色</mdui-radio>
+            <mdui-radio value="#E6AF50" style="color: #E6AF50;">姜黄色</mdui-radio>
+            <mdui-radio value="#FD9354" style="color: #FD9354;">橙色</mdui-radio>
+            <mdui-radio value="#BBC5E8" style="color: #BBC5E8;">水蓝色</mdui-radio>
+            <mdui-radio value="#F37EC3" style="color: #F37EC3;">热粉色</mdui-radio>
+            <mdui-radio value="#ABF0F5" style="color: #ABF0F5;">丹青色</mdui-radio>
+            <mdui-radio value="#E896AF" style="color: #E896AF;">柔玫瑰色</mdui-radio>
+            <mdui-radio value="#D46235" style="color: #D46235;">橘红色</mdui-radio>
+            <mdui-radio value="#E3B16D" style="color: #E3B16D;">昏黄色</mdui-radio>
+            <mdui-radio value="#7F8CC8" style="color: #7F8CC8;">海尼兰色</mdui-radio>
+            <mdui-radio value="#FFB3C2" style="color: #FFB3C2;">冰草莓色</mdui-radio>
+            <mdui-radio value="#9FCBFF" style="color: #9FCBFF;">天蓝色</mdui-radio>
+            <mdui-radio value="#92D7C6" style="color: #92D7C6;">浅松柏绿色</mdui-radio>
+        </mdui-radio-group>
+        <mdui-button slot="action">关闭</mdui-button>
+    </mdui-dialog>
+    <script>
+        const dialog = document.querySelector(".color-setting");
+        const openButton = document.querySelector("#fab")
+        const closeButton = dialog.querySelector("mdui-button");
+
+        openButton.addEventListener("click", () => dialog.open = true);
+        closeButton.addEventListener("click", () => dialog.open = false);
+    </script>
 </body>
 
 </html>
