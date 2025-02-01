@@ -50,6 +50,8 @@
             <mdui-button end-icon="arrow_forward" href="https://www.bilibili.com/video/BV1g8WQemEMm"
                 target="_href">访问</mdui-button>
         </div>
+        <mdui-divider></mdui-divider>
+        本站访客数：<span id="finicount_views"></span>
     </div>
     <mdui-dialog class="color-setting" headline="调色盘">
         <mdui-radio-group value="#9FB1F1" id="cc" onchange="colorchange();">
@@ -82,6 +84,7 @@
         openButton.addEventListener("click", () => dialog.open = true);
         closeButton.addEventListener("click", () => dialog.open = false);
     </script>
+    <script async src="//finicounter.eu.org/finicounter.js"></script>
 </body>
 
 </html>

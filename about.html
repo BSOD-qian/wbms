@@ -33,6 +33,8 @@
         <h2>关于我们</h2>
         宽鸟WBMS（Wide Bird Middle
         School）是成立于2021年5月14日的学生组织。宽鸟二字由长岛演化而来，起初是为了防止老师查班群想出的化名，但久而久之被赋予了特殊的意义。如今，宽鸟团的大家已经一起走过了5个年头，积攒了无数幸福快乐的回忆。
+        <mdui-divider></mdui-divider>
+        本站访客数：<span id="finicount_views"></span>
     </div>
     <mdui-dialog class="color-setting" headline="调色盘">
         <mdui-radio-group value="#9FB1F1" id="cc" onchange="colorchange();">
@@ -65,6 +67,7 @@
         openButton.addEventListener("click", () => dialog.open = true);
         closeButton.addEventListener("click", () => dialog.open = false);
     </script>
+    <script async src="//finicounter.eu.org/finicounter.js"></script>
 </body>
 
 </html>

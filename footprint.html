@@ -56,6 +56,8 @@
             style="padding: 32px; margin: 16px; background-image: url(./year/2025.png); background-position: center center; border-radius: var(--mdui-shape-corner-extra-large); box-shadow: var(--mdui-elevation-level5); color: #FFFFFF;">
             <h3>2025年</h3>我们会继续努力的！
         </div>
+        <mdui-divider></mdui-divider>
+        本站访客数：<span id="finicount_views"></span>
     </div>
     <mdui-dialog class="color-setting" headline="调色盘">
         <mdui-radio-group value="#9FB1F1" id="cc" onchange="colorchange();">
@@ -88,6 +90,7 @@
         openButton.addEventListener("click", () => dialog.open = true);
         closeButton.addEventListener("click", () => dialog.open = false);
     </script>
+    <script async src="//finicounter.eu.org/finicounter.js"></script>
 </body>
 
 </html>
