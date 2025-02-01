@@ -7,6 +7,7 @@ if (color_in_ls == null){
     mdui.setColorScheme(color_in_ls);
 }
 function setcc(){
+    color_in_ls = localStorage.getItem("wbms_color");
     document.getElementById('cc').value = color_in_ls;
 }
 function colorchange(){
