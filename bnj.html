@@ -8,7 +8,9 @@
 
     <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
     <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
-    <script src="./color.js"></script>
+    <script>
+        mdui.setColorScheme('#FF0000');
+    </script>
     <!-- 如果使用了组件的 icon 属性，还需要引入图标的 CSS 文件 -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
@@ -16,46 +18,63 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone" rel="stylesheet">
 
-    <title>宽鸟 - 充满奇思妙想的小小乌托邦</title>
+    <title>宽鸟足迹 | 宽鸟 - 充满奇思妙想的小小乌托邦</title>
 </head>
 
 <body>
-    <mdui-navigation-rail value="home" divider alignment="center">
+    <mdui-navigation-rail value="bnj" divider alignment="center">
         <mdui-avatar src="https://s1.imagehub.cc/images/2025/02/04/2d78e757b89609e2ab93c2603a356d3b.png"
             slot="top"></mdui-avatar>
         <mdui-navigation-rail-item icon="home" value="home" href="./index.html">主页</mdui-navigation-rail-item>
         <mdui-navigation-rail-item icon="info" value="about" href="./about.html">关于我们</mdui-navigation-rail-item>
         <mdui-navigation-rail-item icon="menu_book" value="footprint"
             href="./footprint.html">宽鸟足迹</mdui-navigation-rail-item>
-        <mdui-fab icon="color_lens" slot="bottom" id="fab" onclick="setcc();"></mdui-fab>
+        <mdui-fab icon="color_lens" slot="bottom" id="fab" onclick="setcc();" disabled></mdui-fab>
     </mdui-navigation-rail>
     <div class="mdui-prose" style="margin: 16px;">
         <div
             style="padding-top: 10vh; padding-bottom: 10vh; text-align: center; background-color: rgb(var(--mdui-color-primary)); border-radius: var(--mdui-shape-corner-extra-large); color: rgb(var(--mdui-color-on-primary)); box-shadow: var(--mdui-elevation-level5);">
-            <h1>欢迎造访宽鸟镇</h1>
-            充满奇思妙想的小小乌托邦<span style="display: flex; align-items: center; justify-content: center;">关注我们：<mdui-icon
-                    src="./bilibili.svg"></mdui-icon>WBMS宽鸟碎碎念</span>
+            <h1>2025宽鸟拜年纪</h1>
+            乙巳新春 故友团圆
         </div>
         <div
             style="padding: 32px; margin-top: 16px; background-image: url(./2025bnj.jpg); background-position: center center; border-radius: var(--mdui-shape-corner-extra-large); box-shadow: var(--mdui-elevation-level5); color: #FFFFFF;">
-            <h3>2025宽鸟拜年纪</h3>
-            <mdui-button end-icon="arrow_forward" href="./bnj.html">访问</mdui-button>
+            <h3>互动抽奖</h3>
+            <mdui-button end-icon="arrow_forward" href="https://www.wjx.cn/vm/OlboPhb.aspx" target="_href">访问</mdui-button>
         </div>
-        <h2>最新作品</h2>
+        <h3>Chapter 1 - 家园</h3>
         <div
             style="padding: 32px; margin-top: 16px; background-image: url(./coverBV1ocNAeqE4w.jpg); background-position: center center; border-radius: var(--mdui-shape-corner-extra-large); box-shadow: var(--mdui-elevation-level5); color: #FFFFFF;">
-            <h3>宽鸟2025｜《环镇风景》听说宽鸟成员的我的世界水平都一定不会太差！来看看耗时五年的建筑群长什么样吧</h3>
-            <span style="display: flex; align-items: center;"><mdui-icon
-                    src="./up.svg"></mdui-icon>WBMS宽鸟碎碎念</span><br />
+            <h3>环镇风景</h3>
+            <span style="display: flex; align-items: center;">宽鸟镇全员</span><br />
             <mdui-button end-icon="arrow_forward" href="https://www.bilibili.com/video/BV1ocNAeqE4w/"
                 target="_href">观看</mdui-button>
         </div>
+        <h3>Chapter 2 - 归途</h3>
         <div
-            style="padding: 32px; margin-top: 16px; background-image: url(./cartoon21.png); background-position: center center; border-radius: var(--mdui-shape-corner-extra-large); box-shadow: var(--mdui-elevation-level5); color: #FFFFFF;">
-            <h3>宽鸟团の奇妙生活 · 第 21 话</h3>
-            <span style="display: flex; align-items: center;">我们的故事始于夏天</span><br />
-            <mdui-button end-icon="arrow_forward" href="https://www.bilibili.com/opus/760123256445337620/"
-                target="_href">阅读</mdui-button>
+            style="padding: 32px; margin-top: 16px; background-color: rgb(var(--mdui-color-surface-dim)); background-position: center center; border-radius: var(--mdui-shape-corner-extra-large); box-shadow: var(--mdui-elevation-level5); color: rgb(var(--mdui-color-on-surface));">
+            <h3>节目待解锁</h3>
+            <span style="display: flex; align-items: center;">节目待解锁</span><br />
+            <mdui-button end-icon="arrow_forward" href="" target="_href" disabled>节目待解锁</mdui-button>
+        </div>
+        <div
+            style="padding: 32px; margin-top: 16px; background-color: rgb(var(--mdui-color-surface-dim)); background-position: center center; border-radius: var(--mdui-shape-corner-extra-large); box-shadow: var(--mdui-elevation-level5); color: rgb(var(--mdui-color-on-surface));">
+            <h3>节目待解锁</h3>
+            <span style="display: flex; align-items: center;">节目待解锁</span><br />
+            <mdui-button end-icon="arrow_forward" href="" target="_href" disabled>节目待解锁</mdui-button>
+        </div>
+        <h3>Chapter 3 - 欢聚</h3>
+        <div
+            style="padding: 32px; margin-top: 16px; background-color: rgb(var(--mdui-color-surface-dim)); background-position: center center; border-radius: var(--mdui-shape-corner-extra-large); box-shadow: var(--mdui-elevation-level5); color: rgb(var(--mdui-color-on-surface));">
+            <h3>节目待解锁</h3>
+            <span style="display: flex; align-items: center;">节目待解锁</span><br />
+            <mdui-button end-icon="arrow_forward" href="" target="_href" disabled>节目待解锁</mdui-button>
+        </div>
+        <div
+            style="padding: 32px; margin-top: 16px; background-color: rgb(var(--mdui-color-surface-dim)); background-position: center center; border-radius: var(--mdui-shape-corner-extra-large); box-shadow: var(--mdui-elevation-level5); color: rgb(var(--mdui-color-on-surface));">
+            <h3>节目待解锁</h3>
+            <span style="display: flex; align-items: center;">节目待解锁</span><br />
+            <mdui-button end-icon="arrow_forward" href="" target="_href" disabled>节目待解锁</mdui-button>
         </div>
         <div style="color: rgb(var(--mdui-color-secondary)); margin-top: 32px;">
             本站访客数：<span id="finicount_views"></span><br />
